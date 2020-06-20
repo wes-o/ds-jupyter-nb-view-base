@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euf
+
+# installation of xeus kernel to support Jupyter Lab extension
+conda install -c conda-forge xeus-python=0.8.0 ptvsd
+
+jupyter labextension install @jupyterlab/debugger
+
+jupyter lab build

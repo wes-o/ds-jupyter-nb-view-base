@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# removing configuration dir at session start
+rm -rf binder
+
+# Any additional commands to add...
+
+exec "$@"

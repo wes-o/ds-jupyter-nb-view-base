@@ -1,16 +1,12 @@
 # Written by Wes Oler, https://github.com/wes-o
 # Distributed under terms of MIT License
 
-# Developed and based on standard configuration file to create and activate a new conda environment.
-# https://mybinder.readthedocs.io/en/latest/config_files.html
+# Developed and based on standard configuration file to create and activate a new conda environment
+# https://mybinder.readthedocs.io/en/latest/using/config_files.html
 
-# Added explicit version numbers for compatability with defined packages.
-
-# As of June, 2020. Includes: 
-# [python=3.7, ipywidgets==7.5.1, jupyterlab==1.2.6, jupyterhub-singleuser==1.1.0, nbconvert==5.6.1, nbresuse==0.3.3,
-#  notebook==6.0.3, nteract_on_jupyter==2.1.3 ]
-
-# Defined at:
+# As of June 2022
+# Changed explicit version numbers to match configuration
+# defined at:
 # https://github.com/jupyter/repo2docker/blob/master/repo2docker/buildpacks/conda/environment.yml
 
 
@@ -19,20 +15,20 @@ channels:
   - conda-forge
 dependencies:
   - cython
-  - jupyterlab=2
-  - ipykernel=5.1
-  - ipywidgets>7.5
+  - jupyterlab>2
+  - ipykernel>5.1
+  - ipywidgets==7.7.0
   - line_profiler
   - matplotlib>3
-  - notebook>6
+  - notebook==6.4.10
   - numpy
-  - pandas=0.24
+  - nodejs=14
   - pillow
   - plotly
-  - python>3.6
+  - python=3.7
   - pip
   - pip:
     - jupyterlab_latex
     - nbgitpuller
     - sphinx-gallery
-
+    - pandas

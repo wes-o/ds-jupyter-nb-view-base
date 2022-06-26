@@ -24,5 +24,5 @@ Code released under the [MIT](https://github.com/wes-o/ds-jupyter-nb-view-base/b
 
 ---
 
-Wes Oler Copyright &copy; 2020
+Wes Oler Copyright &copy; 2022
 Created and maintained by [Wes Oler](https://github.com/wes-o). 
